@@ -1,0 +1,87 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.router {
+    /* Base styles for all screens */
+    width: 80em;
+    height: 45em;
+    margin: 0 auto; /* Center element horizontally on all screens */
+}
+
+/* Media queries for various screen sizes */
+@media (max-width: 1200px) {
+    .router {
+        width: 60em; /* Adjust width for large screens (e.g., tablets) */
+    }
+}
+@media (max-width: 1024px) {
+    .router {
+        width: 55em; /* Adjust width for large screens (e.g., tablets) */
+    }
+}
+@media (max-width: 900px) {
+    .router {
+        width: 40em; /* Set width to 100% for medium screens */
+    }
+}
+
+@media (max-width: 700px) {
+    .router {
+        /* Specific adjustments for very small screens (e.g., phones) */
+        width: 30em;
+    }
+}
+
+@media (max-width: 600px) {
+    .router {
+        width: 25em; /* Adjust height for smaller screens */
+    }
+}
+
+/* Add more media queries for even smaller screens if needed */
+@media (max-width: 400px) {
+    .router {
+        /* Specific adjustments for very small screens (e.g., phones) */
+        width: 20em;
+    }
+}
